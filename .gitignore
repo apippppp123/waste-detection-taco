@@ -1,0 +1,15 @@
+# data & hasil training berat jangan masuk git
+data/*
+!data/README.md
+runs/
+*.pt
+*.pth
+*.onnx
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+# hasil kecil (gambar/csv/json di results/) BOLEH di-commit

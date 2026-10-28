@@ -1,0 +1,9 @@
+# PyTorch + torchvision TIDAK ditaruh di sini: install dulu lewat pytorch.org (varian CUDA)
+ultralytics
+torchmetrics
+pycocotools
+pandas
+matplotlib
+pyyaml
+pillow
+tqdm
