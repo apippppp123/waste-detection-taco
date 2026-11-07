@@ -1,0 +1,11 @@
+class,train,val,test,total
+Plastic bag & wrapper,611,148,91,850
+Cigarette,520,75,72,667
+Bottle,305,74,60,439
+Bottle cap,195,50,44,289
+Can,182,52,39,273
+Other plastic,178,63,32,273
+Carton,185,32,34,251
+Cup,135,31,26,192
+Straw,119,24,18,161
+Other,919,283,187,1389

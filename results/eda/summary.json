@@ -1,0 +1,11 @@
+{
+  "images": {
+    "train": 1050,
+    "val": 225,
+    "test": 225
+  },
+  "boxes_total": 4784,
+  "median_rel_area": 0.0035023065839999996,
+  "small_ratio_(<0.25%_luas_gambar)": 0.45171404682274247,
+  "imbalance_ratio_(max/min_kelas_train)": 7.722689075630252
+}
