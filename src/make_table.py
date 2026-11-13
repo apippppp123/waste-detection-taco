@@ -9,7 +9,7 @@ def main():
     rows = [json.loads(p.read_text()) for p in sorted(Path("results").glob("*/test_metrics.json"))]
     if not rows:
         raise SystemExit("Belum ada results/*/test_metrics.json. Jalankan evaluate.py dulu.")
-    main_cols = ["model", "type", "mAP50", "mAP50-95", "mAP_small", "mAP_medium", "mAP_large", "FPS"]
+    main_cols = ["model", "type", "mAP50", "mAP50-95", "mAP_small", "mAP_medium", "mAP_large", ]
     df = pd.DataFrame([{k: r[k] for k in main_cols} for r in rows])
     df.to_csv("results/summary.csv", index=False)
 

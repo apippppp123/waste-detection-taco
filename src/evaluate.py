@@ -80,7 +80,7 @@ def main():
     (out / "viz").mkdir(parents=True, exist_ok=True)
     viz_idx = set(np.linspace(0, len(imgs) - 1, a.viz, dtype=int).tolist()) if a.viz else set()
 
-    for p in imgs[:5]:  # warm-up (tidak dihitung)
+    for p in imgs[:30]:  # warm-up (tidak dihitung)
         predict(Image.open(p).convert("RGB"))
 
     metric = MeanAveragePrecision(box_format="xyxy", iou_type="bbox", class_metrics=True)
@@ -98,7 +98,7 @@ def main():
             draw(img, b, s, l, names).save(out / "viz" / f"{p.stem}.jpg", quality=90)
 
     r = metric.compute()
-    ms = float(np.mean(times) * 1000)
+    ms = float(np.median(times) * 1000)
     per_class = {}
     for c, ap_c in zip(r["classes"].tolist(), r["map_per_class"].tolist()):
         per_class[names[c]] = ap_c  # -1 berarti kelas tidak punya ground truth di split ini
