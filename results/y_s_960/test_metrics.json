@@ -10,8 +10,8 @@
   "mAP_medium": 0.20051860809326172,
   "mAP_large": 0.30744481086730957,
   "mAR100": 0.41814833879470825,
-  "ms_per_image": 50.07,
-  "FPS": 19.97,
+  "ms_per_image": 29.56,
+  "FPS": 33.82,
   "AP_per_class": {
     "Plastic bag & wrapper": 0.2214740514755249,
     "Cigarette": 0.11306880414485931,
